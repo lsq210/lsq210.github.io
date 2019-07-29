@@ -75,7 +75,7 @@ CNZZ_analytics:
 # favicon
 favicon: /assets/favicon.ico
 # truncate length (the default is 300)
-truncate_length: 17
+truncate_length: 
 # enable toc
 toc: true
 
