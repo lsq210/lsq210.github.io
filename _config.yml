@@ -98,7 +98,7 @@ deploy:
 
 
 jsonContent:
-  meta: false
+  meta: true
   pages: false
   posts:
     title: true
@@ -111,9 +111,9 @@ jsonContent:
     updated: false
     comments: false
     link: false
-    permalink: false
+    permalink: true
     excerpt: false
-    categories: false
+    categories: true
     tags: true
     
 about:
