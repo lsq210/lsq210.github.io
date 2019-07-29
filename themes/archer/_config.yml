@@ -1,0 +1,82 @@
+# ========== Profile ========== #
+# avatar
+avatar: /avatar/kumamon.jpg
+# author name
+author: Luo 17
+# signature
+signature: still walking
+# SNS
+social:
+  email: 1135595767@qq.com
+  github: //github.com/lsq210
+  weibo:
+  # zhihu:
+  # douban:
+  # facebook:
+  # twitter:
+  # instagram:
+  # stack-overflow:
+  # linkedin:
+  # others:
+  rss: /atom.xml
+# friends
+friends:
+  yueyy: //yueyy.github.io/
+  cs-Tao: http://home.cs-tao.cc/
+  # friendC :
+about:
+  enable: true
+  image: '/intro/about-page.jpg'
+
+# ========== Site ========== #
+# title of the site
+SEO_title: 开心就好
+# main title
+main_title: 开心就好
+# subtitle
+subtitle: 练习成为一个真正自由的人
+# site haeder image
+site_header_image: 'http://oumn0o088.bkt.clouddn.com/intro-desktop.jpg'
+# post haeder image
+post_header_image: 'http://oumn0o088.bkt.clouddn.com/post-bg.jpg'
+# 404 image
+_404_image: 'http://oumn0o088.bkt.clouddn.com/404.jpg'
+
+# ========== Comment ========== #
+# Fill in the field to enable the corresponding comment plugin
+# If you want to add other comment plugin, edit in "custom.ejs"
+comment: 
+  # livere  site: https://livere.com/
+  livere_uid:
+  # disqus  site: https://disqus.com/
+  disqus_shortname:
+  # changyan  site: http://changyan.kuaizhan.com/
+  changyan_appid:
+  changyan_conf:
+  # gitment  site: https://github.com/imsun/gitment
+  gitment_owner: lsq210
+  gitment_repo: lsq210.github.io
+  gitment_client_id: d04da3eb4877f8d49b1b
+  gitment_client_secret: a3b39f5d7ee15e2cd56d7391185fc02b3f6e8f57
+  # youyan  site: http://www.uyan.cc/
+  youyan_uid:
+
+# ========== Analytics ========== #
+# Busuanzi pv Analytics
+busuanzi: true
+# Baidu analytics
+baidu_analytics:
+# Google analytics
+google_analytics:
+# CNZZ analytics
+CNZZ_analytics:
+
+# ========== Others ========== #
+# favicon
+favicon: /assets/favicon.ico
+# truncate length (the default is 300)
+truncate_length: 17
+# enable toc
+toc: true
+
+

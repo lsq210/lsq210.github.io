@@ -1,0 +1,26 @@
+language: node_js
+node_js: 8
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm install -g hexo
+  - hexo g
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: public
+  github-token: $GH_TOKEN
+  on:
+    branch:
+      - source
+
+branches:
+  only:
+    - source
