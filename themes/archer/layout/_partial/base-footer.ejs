@@ -7,13 +7,17 @@
     <% } %>
     <!-- powered by Hexo  -->
     <div class="copyright">
-        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
     </div>
     <!-- 不蒜子  -->
     <% if (theme.busuanzi) { %>
     <div class="busuanzi-container">
-        <span id="busuanzi_container_site_pv">VISITOR VOLUME: <span id="busuanzi_value_site_pv"></span>
-        </span>
+    <% var sloganPieces = theme.busuanzi_slug.split('${count}') %>
+    <% if(theme.busuanzi_pv_or_uv === 'pv') { %> 
+    <span id="busuanzi_container_site_pv"><%- sloganPieces[0] %><span id="busuanzi_value_site_pv"></span><%- sloganPieces[1] %></span>
+    <% } else if (theme.busuanzi_pv_or_uv === 'uv') { %>
+    <span id="busuanzi_container_site_uv"><%- sloganPieces[0] %><span id="busuanzi_value_site_uv"></span><%- sloganPieces[1] %></span>
+    <% } %>
     </div>
     <% } %>
 </footer>

@@ -1,82 +1,120 @@
 # ========== Profile ========== #
 # avatar
-avatar: /avatar/kumamon.jpg
+avatar: /avatar/Misaka.jpg
 # author name
 author: Luo 17
 # signature
 signature: still walking
-# SNS
+# SNS (you can custom the order)
 social:
   email: 1135595767@qq.com
   github: //github.com/lsq210
-  weibo:
-  # zhihu:
-  # douban:
-  # facebook:
-  # twitter:
-  # instagram:
-  # stack-overflow:
-  # linkedin:
-  # others:
-  rss: /atom.xml
+  # wechat and qq should be a path of qr-code image
+  wechat: /assets/wx.png
+  qq: 
+  telegram: 
+  weibo: 
+  zhihu: 
+  douban: 
+  facebook: 
+  twitter: 
+  instagram: 
+  stack-overflow: 
+  segmentFault: 
+  juejin: 
+  v2ex: 
+  bilibili: 
+  linkedin: 
+  steam: 
+  others: 
+  rss: 
 # friends
 friends:
   yueyy: //yueyy.github.io/
   cs-Tao: http://home.cs-tao.cc/
-  # friendC :
+  # friendC: 
 about:
   enable: true
-  image: '/intro/about-page.jpg'
+  image: '/intro/about-bg.jpg'
 
 # ========== Site ========== #
-# title of the site
+# title of the site (good for SEO)
 SEO_title: 开心就好
-# main title
+# keywords for site (good for SEO)
+SEO_keywords:
+  - hexo
+  - 'hexo-theme'
+  - 'hexo-blog'
+# main title shown in header image
 main_title: 开心就好
 # subtitle
 subtitle: 练习成为一个真正自由的人
 # site haeder image
-site_header_image: 'http://oumn0o088.bkt.clouddn.com/intro-desktop.jpg'
+site_header_image: '/intro/index-bg.jpg'
 # post haeder image
-post_header_image: 'http://oumn0o088.bkt.clouddn.com/post-bg.jpg'
+post_header_image: '/intro/post-bg.jpg'
 # 404 image
-_404_image: 'http://oumn0o088.bkt.clouddn.com/404.jpg'
+_404_image: '/intro/404-bg.jpg'
+
+# ========== Search ========== #
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We did not find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
 
 # ========== Comment ========== #
 # Fill in the field to enable the corresponding comment plugin
 # If you want to add other comment plugin, edit in "custom.ejs"
-comment: 
-  # livere  site: https://livere.com/
-  livere_uid:
-  # disqus  site: https://disqus.com/
-  disqus_shortname:
-  # changyan  site: http://changyan.kuaizhan.com/
-  changyan_appid:
-  changyan_conf:
-  # gitment  site: https://github.com/imsun/gitment
+comment:
+  # Livere  site: https://livere.com/
+  livere_uid: 
+  # Disqus  site: https://disqus.com/
+  disqus_shortname: 
+  # Gitment  site: https://github.com/imsun/gitment
   gitment_owner: lsq210
   gitment_repo: lsq210.github.io
   gitment_client_id: d04da3eb4877f8d49b1b
   gitment_client_secret: a3b39f5d7ee15e2cd56d7391185fc02b3f6e8f57
-  # youyan  site: http://www.uyan.cc/
-  youyan_uid:
+  # Youyan  site: http://www.uyan.cc/
+  youyan_uid: 
+  # Valine  site: https://valine.js.org/
+  valine_appId: 
+  valine_appKey: 
+  valine_placeHolder: 
 
 # ========== Analytics ========== #
-# Busuanzi pv Analytics
+# enable Busuanzi analytics
 busuanzi: true
+# fill in pv or uv
+busuanzi_pv_or_uv: 'pv'
+# custom analytic slogan, '${count}' is the analytic number, DO NOT modify it.
+busuanzi_slug: 'PV: ${count} :)'
 # Baidu analytics
-baidu_analytics:
+baidu_analytics: 
 # Google analytics
-google_analytics:
+google_analytics: 
 # CNZZ analytics
-CNZZ_analytics:
+CNZZ_analytics: 
 
 # ========== Others ========== #
 # favicon
 favicon: /assets/favicon.ico
-# truncate length (the default is 300)
-truncate_length: 17
+# truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
+truncate_length: 
 # enable toc
 toc: true
-
-
+# word count & reading time
+reading_info: true
+# intro height (the default is 50 percents of the screen, you can input other number)
+index_intro_height: 50
+post_intro_height: 50
+about_intro_height: 50
+# copyright
+copyright:
+  enable: false
+  # https://creativecommons.org/
+  license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
