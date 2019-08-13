@@ -1,0 +1,76 @@
+.container {
+    padding: 3rem 0 0 0;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease-out 0s;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.profile {
+    order: 0;
+    vertical-align: top;
+    flex-shrink: 0;
+    margin: 4px 0 0 0;
+    width: 200px;
+    font: 1rem "Oswald-Regular";
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+    color: #777;
+}
+.profile img {
+    display: block;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.6);
+}
+.profile-name {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0.5rem 0 0 0;
+    color: #333;
+    text-align: center;
+}
+.profile-signature {
+    font-size: 1rem;
+    text-align: center;
+}
+.profile-social {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    line-height: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: center;
+}
+.friends {
+    font-family: inherit;
+    font: 1rem "Oswald-Regular";
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+    text-align: center;
+}
+.article-pages {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    line-height: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: inline-block;
+    text-align: center;
+}
+.about {
+    order: 1;
+    width: 50%;
+    min-width: 42.8125rem;
+    flex-grow: 0;
+    padding: 0 0 0 0;
+    margin-left: 3rem;
+}
