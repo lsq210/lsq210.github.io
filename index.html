@@ -5,41 +5,75 @@
     <link rel="stylesheet" href="css/site-intro.css"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1351065_3pjn4rnegzm.css">
+    <style>
+        a {
+            text-decoration: none;
+            background-color: transparent;
+        }
+    </style>
 </head>
-<body>
-    <div class="site-intro">
-        <div class="site-intro-img" style="background-image: url(./pic/hk.jpg)"></div>
+<body style="margin: 0%">
+    <div class="site-intro" id="app-1">
+        <div class="site-intro-img" style="background-image: url(./pic/index-bg.jpg)"></div>
         <div class="site-intro-meta">
-            <h1 class="intro-title intro-fade-in">开心就好</h1>
-            <p class="intro-subtitle intro-fade-in">练习成为一个真正自由的人</p>
+            <h1 class="intro-title intro-fade-in">{{ title }}</h1>
+            <p class="intro-subtitle intro-fade-in">{{ subtitle }}</p>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="app-2">
         <div class="profile">
             <img src="./pic/Misaka.jpg">
-            <div class="profile-name">Luo 17</div>
-            <div class="profile-signature">still walking</div>
+            <div class="profile-name">{{ name }}</div>
+            <div class="profile-signature">{{ signature }}</div>
             <div class="profile-social">
-                <a href="1135595767@qq.com">email</a>
-                <a href="1135595767@qq.com">wechat</a>
-                <a href="https://github.com/lsq210">github</a>
+                <div>CONTACT</div>
+                <a href="1135595767@qq.com" class="iconfont icon-icon-email" title="email"></a>
+                <a href="https://github.com/lsq210" class="iconfont icon-GitHub" title="github"></a>
+                <a href="1135595767@qq.com" class="iconfont icon-weixin" title="wechat"></a>
             </div>
             <div class="article-pages">
-                <a href="https://lsq210.github.io/life">life</a>
-                <a href="https://lsq210.github.io/code">code</a>
+                <div>ARTICLES</div>
+                <a href="https://lsq210.github.io/life" class="iconfont icon-write" title="life"></a>
+                <a href="https://lsq210.github.io/code" class="iconfont icon-code" title="code"></a>
             </div>
-            <div class="friends">
-                <a href="https://github.com/lsq210">FriendA</a>
-                <a href="https://github.com/lsq210">FriendB</a>
+            <div class="friends" v-if="false">
+                <div>FRIENDS</div>
+                <a href="https://home.cs-tao.cc/">cs-tao</a>
+                <a href="yueyy.github.io">Yue</a>
             </div>
         </div>
         <div class="about">
-            <p>一条快乐的咸鱼🐟</p>
+            <p v-if="false">吃😋 打球🏸 看辩论赛💬<br>目前人生三大乐趣<br>没有什么精彩的经历<br>想做一条快乐的咸鱼🐟</p>
+            <p>没有什么事<br>正在愉快地长胖着</p>
         </div>
     </div>
-    
+    <div class="footer">
+        <div class="copyright">
+            <span>
+                Powered by <a href="https://hexo.io/">Hexo</a>
+            </span>
+        </div>
+        
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
+    new Vue({
+        el: '#app-1',
+        data: {
+            title: '开心就好',
+            subtitle: '练习成为一个真正自由的人'
+        }
+    })
+    new Vue ({
+        el: '#app-2',
+        data: {
+            name: 'Luo 17',
+            signature: 'still walking'
+        },
+    })
 </script>
 </html>

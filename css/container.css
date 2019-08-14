@@ -17,7 +17,6 @@
     margin: 4px 0 0 0;
     width: 200px;
     font: 1rem "Oswald-Regular";
-    border-bottom: 1px solid rgba(0,0,0,0.1);
     padding-bottom: 0.5rem;
     color: #777;
 }
@@ -25,7 +24,10 @@
     display: block;
     border-radius: 1rem;
     width: 100%;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,0.6);
+    display: inline-block;
+    color: #777;
+    font-size: 1.5rem;
+    margin: 0 .4rem 0 0;
 }
 .profile-name {
     font-size: 2rem;
@@ -48,29 +50,65 @@
     display: inline-block;
     text-align: center;
 }
+.profile-social .iconfont{
+    display: inline-block;
+    color: #777;
+    font-size: 2rem;
+    margin: 0 .4rem 0 0;
+}
+.profile-social div {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+}
 .friends {
     font-family: inherit;
     font: 1rem "Oswald-Regular";
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     text-align: left;
-    text-align: center;
+}
+.friends div {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+}
+.friends a {
+    margin-right: 0.6rem;
 }
 .article-pages {
     position: relative;
     width: 100%;
-    text-align: left;
     line-height: 1.7rem;
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     display: inline-block;
     text-align: center;
 }
+.article-pages div {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+}
+.article-pages .iconfont {
+    display: inline-block;
+    color: #777;
+    font-size: 1.5rem;
+    margin: .3rem 1rem 0 0;
+    position: relative;
+}
 .about {
     order: 1;
     width: 50%;
     min-width: 42.8125rem;
     flex-grow: 0;
-    padding: 0 0 0 0;
     margin-left: 3rem;
+    position: relative;
+    padding: 1rem 0rem 1rem 0rem;
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+    z-index: 3;
+}
+.about p {
+    line-height: 1.625;
+    color: #333;
 }
