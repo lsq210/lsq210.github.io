@@ -33,11 +33,11 @@
                 <div class="profile-signature">{{ signature }}</div>
                 <div class="profile-social">
                     <a v-for="(item, index) in socialLinks" 
-                    class="iconfont"
-                    v-bind:class="item.className"
-                    v-bind:href="item.link"
-                    v-bind:title="item.title"
-                    v-bind:key="`social-${index}`">
+                        class="iconfont"
+                        v-bind:class="item.className"
+                        v-bind:href="item.link"
+                        v-bind:title="item.title"
+                        v-bind:key="`social-${index}`">
                     </a>
                     <span class="iconfont icon-weixin" title="wechat">
                         <img class="profile-qr" src="pic/wx.png">
@@ -102,7 +102,7 @@
                 },
                 {
                     link: 'https://github.com/lsq210',
-                    className: 'icon-Github',
+                    className: 'icon-GitHub',
                     title: 'github'
                 },
             ],
