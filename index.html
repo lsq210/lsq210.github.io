@@ -2,13 +2,14 @@
 <html class="regular">
 <head>
     <title>QI's Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./pic/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/site-intro.css"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1351065_0xvn7dnlcj2h.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1351065_b2ljpryz1k5.css">
     <style>
         a {
             text-decoration: none;
@@ -17,73 +18,118 @@
     </style>
 </head>
 <body style="margin: 0%">
-    <div class="site-intro" id="app-1">
-        <div class="site-intro-img" style="background-image: url(./pic/index-bg.jpg)"></div>
-        <div class="site-intro-meta">
-            <h1 class="intro-title intro-fade-in">{{ title }}</h1>
-            <p class="intro-subtitle intro-fade-in">{{ subtitle }}</p>
+    <div id="app">
+        <div class="site-intro">
+            <div class="site-intro-img" style="background-image:url(./pic/index-bg.jpg)"></div>
+            <div class="site-intro-meta">
+                <h1 class="intro-title intro-fade-in">{{ title }}</h1>
+                <p class="intro-subtitle intro-fade-in">{{ subtitle }}</p>
+            </div>
         </div>
-    </div>
-    <div class="container" id="app-2">
-        <div class="profile">
-            <img src="./pic/Arya.jpg">
-            <div class="profile-name">{{ name }}</div>
-            <div class="profile-signature">{{ signature }}</div>
-            <div class="profile-social">
-                <div>CONTACT</div>
-                <a href="1135595767@qq.com" class="iconfont icon-icon-email" title="email"></a>
-                <a href="https://github.com/lsq210" class="iconfont icon-GitHub" title="github"></a>
-                <span class="iconfont icon-weixin" title="wechat">
-                    <img class="profile-qr" src="pic/wx.png">
+        <div class="container">
+            <div class="profile">
+                <img v-bind:src="profileImg">
+                <div class="profile-name">{{ name }}</div>
+                <div class="profile-signature">{{ signature }}</div>
+                <div class="profile-social">
+                    <a v-for="(item, index) in socialLinks" 
+                    class="iconfont"
+                    v-bind:class="item.className"
+                    v-bind:href="item.link"
+                    v-bind:title="item.title"
+                    v-bind:key="`social-${index}`">
+                    </a>
+                    <span class="iconfont icon-weixin" title="wechat">
+                        <img class="profile-qr" src="pic/wx.png">
+                    </span>
+                </div>
+                <div class="article-pages">
+                    <a v-for="(item, index) in articleLinks" 
+                        class="iconfont"
+                        v-bind:class="item.className"
+                        v-bind:href="item.link"
+                        v-bind:title="item.title"
+                        v-bind:key="`articleLinks-${index}`">
+                    </a>
+                </div>
+                <div class="friends" v-if="false">
+                    <a v-for="(item, index) in friendLinks" 
+                        class="iconfont"
+                        v-bind:class="item.className"
+                        v-bind:href="item.link"
+                        v-bind:title="item.title"
+                        v-bind:key="`friendsLinks-${index}`">
+                    </a>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about-title">{{ aboutMeta.title }}</div>
+                <p>今年大三<br>已取得机动车驾驶证🚗</p>
+                <p>喜欢 打球🏸 做手账📝 看辩论赛💬<br>喜欢 李健/权游/HP/男人帮<br>超级不喜欢 做噩梦🙃</p>
+                <p>没有什么事<br>正在愉快地长胖着</p>
+                <p>欢迎交个朋友(╹ڡ╹ )</p>
+                <p>最后一个小小的flag🚩<br>希望自己可以常来这里~</p>
+                <div class="about-time">
+                    <img src="pic/calendar.png">  {{ aboutMeta.date }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <span>
+                    Powered by <a href="https://hexo.io/">Hexo</a> ∞ theme <a href="https://github.com/fi3ework/hexo-theme-archer">Archer</a>
                 </span>
             </div>
-            <div class="article-pages">
-                <div>ARTICLES</div>
-                <a href="https://lsq210.github.io/life" class="iconfont icon-write" title="life"></a>
-                <a href="https://lsq210.github.io/code" class="iconfont icon-code" title="code"></a>
-            </div>
-            <div class="friends" v-if="false">
-                <div>FRIENDS</div>
-                <a href="https://home.cs-tao.cc/">cs-tao</a>
-                <a href="https://yueyy.github.io/">Yue</a>
-            </div>
-        </div>
-        <div class="about">
-            <div class="about-title">ABOUT ME</div>
-            <p>今年大三<br>已取得机动车驾驶证🚗</p>
-            <p>喜欢 打球🏸 做手账📝 看辩论赛💬<br>喜欢 李健/权游/HP/鸡条/前端(划掉)<br>超级不喜欢 做噩梦🙃</p>
-            <p>没有什么事<br>正在愉快地长胖着</p>
-            <p>欢迎交个朋友(╹ڡ╹ )</p>
-            <p>最后一个小小的flag🚩<br>希望自己可以常来这里~</p>
-            <div class="about-time">
-                <img src="pic/calendar.png">  2019/08/15</span>
-            </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="copyright">
-            <span>
-                Powered by <a href="https://hexo.io/">Hexo</a> ∞ theme <a href="https://github.com/fi3ework/hexo-theme-archer">Archer</a>
-            </span>
-        </div>
-        
-    </div>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     new Vue({
-        el: '#app-1',
+        el: '#app',
         data: {
             title: "QI's Home",
-            subtitle: 'Always to be young and in love'
-        }
-    }),
-    new Vue ({
-        el: '#app-2',
-        data: {
+            subtitle: 'Always to be young and in love',
             name: 'Luo 17',
-            signature: 'still walking'
-        },
+            signature: 'still walking',
+            profileImg: './pic/Arya.jpg',
+            socialLinks: [
+                {
+                    link: '1135595767@qq.com',
+                    className: 'icon-icon-email',
+                    title: 'email'
+                },
+                {
+                    link: 'https://github.com/lsq210',
+                    className: 'icon-Github',
+                    title: 'github'
+                },
+            ],
+            articleLinks: [
+                {
+                    link: 'https://lsq210.github.io/life',
+                    className: 'icon-write',
+                    title: 'life'
+                },
+                {
+                    link: 'https://lsq210.github.io/code',
+                    className: 'icon-code',
+                    title: 'code'
+                }
+            ],
+            friendLinks: [
+                {
+                    link: 'https://home.cs-tao.cc/',
+                    className: 'icon-taozi',
+                    title: 'boyfriend'
+                }
+            ],
+            aboutMeta: {
+                title: 'ABOUT ME',
+                date: '2019/08/15',
+            }
+        }
     })
 </script>
 </html>

@@ -14,7 +14,7 @@
     order: 0;
     vertical-align: top;
     flex-shrink: 0;
-    margin: 4px 0 0 4px;
+    margin: 4px 0 0 0;
     width: 200px;
     font: 1rem "Oswald-Regular";
     padding-bottom: 0.5rem;
@@ -92,15 +92,16 @@
     font: 1rem "Oswald-Regular";
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    text-align: left;
-}
-.friends div {
-    font-size: 1.2rem;
-    text-align: left;
-    font-weight: bold;
+    text-align: center;
 }
 .friends a {
     margin-right: 0.6rem;
+    color: #777;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.friends a:hover {
+    color: pink;
 }
 .article-pages {
     position: relative;
@@ -131,8 +132,8 @@
 }
 .about {
     order: 1;
-    width: 50%;
-    min-width: 42.8125rem;
+    width: 40%;
+    min-width: 37.5rem;
     flex-grow: 0;
     margin-left: 4rem;
     position: relative;
