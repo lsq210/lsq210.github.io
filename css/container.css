@@ -14,17 +14,15 @@
     order: 0;
     vertical-align: top;
     flex-shrink: 0;
-    margin: 4px 0 0 0;
+    margin: 4px 0 0 4px;
     width: 200px;
     font: 1rem "Oswald-Regular";
     padding-bottom: 0.5rem;
     color: #777;
 }
 .profile img {
-    display: block;
     border-radius: 1rem;
     width: 100%;
-    display: inline-block;
     color: #777;
     font-size: 1.5rem;
     margin: 0 .4rem 0 0;
@@ -60,6 +58,34 @@
     font-size: 1.2rem;
     text-align: left;
     font-weight: bold;
+}
+.icon-icon-email:hover {
+    color: rgb(20, 89, 112);
+}
+.icon-GitHub:hover {
+    color: black;
+}
+.profile-social span:hover {
+    color: green;
+    cursor: pointer;
+}
+.profile-social span:hover img {
+    display: block
+}
+.profile-qr {
+    display: none;
+    position: absolute;
+    left: 100px;
+    bottom: 2.5rem;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    z-index: 99;
+    background-color: #fff;
+    width: 7rem;
+    transition: all 0.1s ease-in 0s;
+}
+.profile-qr:hover {
+    display: block;
 }
 .friends {
     font-family: inherit;
@@ -97,18 +123,39 @@
     margin: .3rem 1rem 0 0;
     position: relative;
 }
+.icon-write:hover {
+    color:#431049;
+}
+.icon-code:hover {
+    color:#111111;
+}
 .about {
     order: 1;
     width: 50%;
     min-width: 42.8125rem;
     flex-grow: 0;
-    margin-left: 3rem;
+    margin-left: 8rem;
     position: relative;
     padding: 1rem 0rem 1rem 0rem;
     border-bottom: 1px dashed rgba(0,0,0,0.2);
     z-index: 3;
 }
+.about-title {
+    font-family: "Oswald-Regular";
+    font-size: 1.7rem;
+    color: #787878;
+}
+.about-time {
+    font-family: "Oswald-Regular";
+    color: #aaa;
+    float: right;
+}
 .about p {
     line-height: 1.625;
     color: #333;
+}
+.about-time img {
+    position: relative;
+    width: 18px;
+    height: 18px;
 }
