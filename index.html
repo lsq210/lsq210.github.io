@@ -32,6 +32,11 @@
                 <div class="profile-name">{{ name }}</div>
                 <div class="profile-signature">{{ signature }}</div>
                 <div class="profile-social">
+                    <a href="1135595767@qq.com" class="iconfont icon-icon-email" title="email"></a>
+                    <a href="https://github.com/lsq210" class="iconfont icon-GitHub" title="github"></a>
+                    <!-- <span class="iconfont icon-weixin" title="wechat">
+                        <img class="profile-qr" src="pic/wx.png">
+                    </span> -->
                     <a v-for="(item, index) in socialLinks" 
                         class="iconfont"
                         v-bind:class="item.className"
@@ -39,9 +44,6 @@
                         v-bind:title="item.title"
                         v-bind:key="`social-${index}`">
                     </a>
-                    <span class="iconfont icon-weixin" title="wechat">
-                        <img class="profile-qr" src="pic/wx.png">
-                    </span>
                 </div>
                 <div class="article-pages">
                     <a v-for="(item, index) in articleLinks" 
