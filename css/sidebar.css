@@ -1,0 +1,44 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 300px;
+    transition: all .3s ease-in 0s;
+    overflow-x: hidden;
+    background-color: #222;
+}
+.sidebar-title {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 4rem;
+    width: 100%;
+    z-index: 1001;
+    font-family: Oswald-Regular;
+    flex-grow: 0;
+    color: #eee;
+    border-bottom: 2px solid #666;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.sidebar-friend {
+    vertical-align: middle;
+    padding: 1rem 0 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sidebar-friend a {
+    font-family: inherit;
+    font: 1rem "Oswald-Regular";
+    color: #ccc;
+    font-size: 1.2rem;
+}
+.sidebar-friend a:hover {
+    color: #f75357;
+}

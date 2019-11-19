@@ -5,6 +5,8 @@
     justify-content: flex-end;
     padding: 2.5rem 0 1.5rem 0;
     background-color: #fff;
+    position: relative;
+    transition: all .3s ease-in 0s;
 }
 .copyright {
     font-family: "Oswald-Regular";

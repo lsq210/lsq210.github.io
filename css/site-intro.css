@@ -4,6 +4,7 @@
     z-index: 3;
     width: 100%;
     overflow: hidden;
+    transition: all .3s ease-in 0s;
 }
 .site-intro-img {
     position: absolute;

@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    transition: all 0.5s ease-out 0s;
+    transition: all .3s ease-in 0s;
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
@@ -86,22 +86,6 @@
 }
 .profile-qr:hover {
     display: block;
-}
-.friends {
-    font-family: inherit;
-    font: 1rem "Oswald-Regular";
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    text-align: center;
-}
-.friends a {
-    margin-right: 0.6rem;
-    color: #777;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-.friends a:hover {
-    color: pink;
 }
 .article-pages {
     position: relative;
