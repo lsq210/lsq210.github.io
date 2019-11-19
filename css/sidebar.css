@@ -38,6 +38,7 @@
     font: 1rem "Oswald-Regular";
     color: #ccc;
     font-size: 1.2rem;
+    display: block;
 }
 .sidebar-friend a:hover {
     color: #f75357;
