@@ -81,7 +81,6 @@
     border-radius: 3px;
     z-index: 99;
     background-color: #fff;
-    widows: 7rem;
     transition: all 0.1s ease-in 0s;
 }
 .profile-qr:hover {
